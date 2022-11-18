@@ -16,6 +16,35 @@ body {
   background: #000;
   color: #000;
 }
+.judule {
+  color: #fff;
+  font-family: 'barlow';
+  /* text-align: center; */
+  justify-content: center;
+  margin-top: 130px;
+  /* z-index: 2000; */
+  visibility: visible;
+  font-weight: bolder;
+  /* font-size: 200px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.judule-orange {
+  color: #e8871e;
+  font-family: 'barlow';
+  font-weight: bolder;
+  font-size: 100px;
+  margin-left: 10px;
+}
+
+.judule h1 {
+  z-index: 2000;
+  font-weight: bolder;
+  font-size: 100px;
+  font-family: 'barlow';
+}
+
 .name {
   margin-top: 30px;
   padding-top: 100px;
@@ -23,6 +52,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card-cstm {
   margin: 20px;
   border-radius: 18px;
@@ -37,6 +67,7 @@ body {
 -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
 }
+
 .img-cstm{
   border-radius: 18px;
 }
@@ -53,6 +84,7 @@ body {
   stroke: none;
   /* padding-top: 100px; */
 }
+
 /* button {
   margin: 20px;
 } */
@@ -76,6 +108,7 @@ body {
   outline: none;
   justify-content: center;
 }
+
 .btn-5 {
   width: 130px;
   height: 40px;
@@ -87,11 +120,13 @@ body {
   background: #e8871e;
 background: linear-gradient(0deg, #e8871e 0%, #e8871e 100%);
 }
+
 .btn-5:hover {
   color: #cc873c;
   background: transparent;
    box-shadow:none;
 }
+
 button.custom-btn {
   justify-content: center;
   margin: auto;
@@ -112,15 +147,18 @@ button.custom-btn {
    4px 4px 5px 0px #0002;
   transition:400ms ease all;
 }
+
 .card-title {
   font-weight: bolder;
 }
+
 .btn-5:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
+
 .btn-5:hover:before,
 .btn-5:hover:after{
   width:100%;
