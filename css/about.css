@@ -183,3 +183,12 @@ button.custom-btn {
     margin-top: 0px;
   }
 }
+
+@media screen and (max-width: 678px) {
+  .judule h1 {
+    font-size: 50px;
+  }
+  .judule-orange{
+    font-size:  50px;
+  }
+}
