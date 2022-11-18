@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Montserrat&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  /* margin */
+  border-radius: 10px;
+  /* width: 90px; */
+  width: 99.5%;
+  height: 45px;
+  background: #e8871e;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(218, 218, 218, 0.616);
+}
+
+.logo {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow-x: visible;
+  display: flex;
+  align-items: center;
+  margin-right: -15px;
+  /* text-align: center;
+  align-items: center; */
+}
+
+.logo img {
+  width: auto;
+  height: 32px;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+header ul li {
+  list-style: none;
+  align-items: center;
+}
+
+header ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  /* padding: 10px; */
+}
+
+header ul li a:hover,
+header ul li a.inside {
+  color: #fff;
+}
+
+header ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+header ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+header .search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  z-index: 10;
+  cursor: pointer;
+  /* margin-right: 5px; */
+}
+
+.searchBox {
+  position: absolute;
+  /* visibility: hidden; */
+  right: -100%;
+  width: 99%;
+  height: 100%;
+  display: flex;
+  background: #e8871e;
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.searchBox.active {
+  right: 0;
+  border-radius: 10px;
+  visibility: visible;
+}
+
+.searchBox input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #333;
+  font-size: 1.25em;
+  background: #e8871e;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.searchBtn {
+  position: relative;
+  left: 30px;
+  top: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+
+.searchBtn.active {
+  left: 0px;
+}
+
+.closeBtn {
+  opacity: 0;
+  visibility: hidden;
+  scale: 0;
+}
+
+.closeBtn.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  scale: 1;
+}
+
+.login {
+  position: relative;
+  left: 10px;
+  top: 2.5px;
+  transition: 0.5s ease-in-out;
+  color: #000;
+}
+
+.login:hover {
+  color: #ffffff;
+}
+
+.login.active {
+  left: 100px;
+  visibility: hidden;
+}
+
+.menuToggle {
+  position: relative;
+  display: none;
+}
+
+.navigation {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1335px) {
+  header {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .searchBtn {
+    left: 0;
+  }
+  .menuToggle {
+    position: absolute;
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+    transform: translateX(30px);
+    z-index: 10;
+    margin-right: 0px;
+  }
+  .searchBox {
+    visibility: hidden;
+  }
+  header {
+    margin-bottom: 0px;
+    padding: 20px;
+    width: 98.5%;
+  }
+  header .navigation {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    /* left: 100%; */
+    right: -100%;
+    transition: 0.25s ease-in-out;
+    width: 100%;
+    height: 270px;
+    padding: 40px;
+    padding-top: 30px;
+    margin-right: 2px;
+    z-index: 100;
+  }
+  header.open {
+    box-shadow: none;
+  }
+  header.open .navigation {
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #e8871e;
+    width: 100%;
+    height: 270px;
+    padding: 40px;
+    padding-top: 30px;
+    /* border-top: 1px solid #000; */
+    margin-top: 0px;
+    margin-right: 2px;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(255, 255, 255, 0.226);
+    transition: 0.25s ease-in-out;
+  }
+  header.open .navigation li a {
+    font-size: 1.25em;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+/* Akhir dari Navbar */

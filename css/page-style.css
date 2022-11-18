@@ -1,0 +1,97 @@
+/* Awal dari article role */
+.judul-article h1 {
+  padding-top: 0px;
+  font-family: barlow;
+  font-weight: bolder;
+  /* text-align: center; */
+  font-size: 60px;
+  color: #fff;
+  background-color: #e8871e;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+}
+
+.icon-custom {
+  width: 50px;
+  position: absolute;
+  align-items: center;
+  margin-top: 108px;
+  border-radius: 12px;
+  align-content: center;
+  box-shadow: 0 5px 30px rgb(255, 255, 255);
+}
+
+.article-card {
+  margin-top: 30px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-custom {
+  margin: 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 35px #ffffff;
+  /* flex-wrap: nowrap; */
+}
+
+.title-custom {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #e8871e;
+  font-family: barlow;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.logo4 {
+  box-shadow: 0 5px 35px #000;
+}
+
+.img-custom {
+  border-radius: 18px;
+  margin-top: -1.5px;
+  margin-left: -1.5px;
+  margin-right: -3px;
+  width: 289px;
+  /* height: 150px; */
+  /* box-shadow: 0 -5px 20px #e8871e; */
+}
+@media screen and (max-width: 900px) {
+  .article-card {
+    margin-top: 30px;
+    padding-top: 400px;
+  }
+  .card-custom {
+    margin: 20px;
+  }
+  .img-custom {
+    width: 289px;
+  }
+  .article-card {
+    margin-top: -300px;
+  }
+}
+/* @media screen and (min-width: 992px) {
+  .navbar-custom {
+    margin: 5px;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+    background-color: #e8871e;
+  }
+  .search-custom {
+    border-radius: 10px;
+    stroke: #e8871e;
+    margin: 0px;
+    padding-left: 15px;
+  }
+  .navbar-brand-custom {
+    text-align: center;
+  }
+} */

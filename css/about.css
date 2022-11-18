@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  body {
+    background: #000;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Mulainya dari about */
+body {
+  background: #000;
+  color: #000;
+}
+.name {
+  margin-top: 30px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-cstm {
+  margin: 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 35px #fff;
+  display: flex;
+  position: relative;
+  /* flex-direction: ; */
+  color: #000;
+  /* background-color: #fff; */
+  stroke: none;
+  width: 2000px;
+-webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+}
+.img-cstm{
+  border-radius: 18px;
+}
+
+/* Tombol */
+
+.btn-sctm1 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #e8871e;
+  stroke: none;
+  /* padding-top: 100px; */
+}
+/* button {
+  margin: 20px;
+} */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 10px;
+  /* padding: 0px 25px ; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  justify-content: center;
+}
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  background: #e8871e;
+background: linear-gradient(0deg, #e8871e 0%, #e8871e 100%);
+}
+.btn-5:hover {
+  color: #cc873c;
+  background: transparent;
+   box-shadow:none;
+}
+button.custom-btn {
+  justify-content: center;
+  margin: auto;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  justify-content: center;
+  height:2px;
+  width:0;
+  background: #cc873c;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.card-title {
+  font-weight: bolder;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.mslh-1 {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1600px) {
+  .mslh-1,
+  .mslh-2 {
+    margin-top: 40px;
+    /* padding-top: 20px; */
+    /* padding-top: 2000000px; */
+  }
+}
+
+@media screen and (max-width: 1192px) {
+  .mslh-2 {
+    margin-top: 0px;
+  }
+}

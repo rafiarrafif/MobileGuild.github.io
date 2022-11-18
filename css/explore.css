@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Montserrat&family=Poppins&family=Rajdhani:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Barlow", sans-serif; */
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.judul {
+  display: flex;
+  flex-direction: column;
+  /* font-family: "barlow"; */
+}
+
+.white {
+  color: white;
+  font-weight: bolder;
+  margin-top: 90px;
+  /* margin: 50px; */
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  font-family: "Rajdhani";
+  letter-spacing: 0px;
+}
+
+.oranye {
+  color: #e8871e;
+  font-weight: bolder;
+  /* margin: 50px; */
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 65px;
+  font-family: "Rajdhani";
+  margin-top: -20px;
+}
+
+.map-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.map-2 {
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+
+.h1-second {
+  color: #e8871e;
+  font-family: "montserrat";
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: 140px;
+  padding-left: 52px;
+}
+
+.p-second {
+  color: #fff;
+  padding-left: 54px;
+  margin-top: 50px;
+}
+
+.gambar {
+  padding: 50px;
+}
+
+.gambar img {
+  width: 750px;
+  /* box-shadow: 0 5px 35px #ffffff; */
+}
+
+.h1-first {
+  color: #e8871e;
+  font-family: "montserrat";
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: 140px;
+}
+
+.p-first {
+  color: #fff;
+  padding-right: 50px;
+  margin-top: 50px;
+  /* margin-top: -180px; */
+}
+
+.hr {
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .map-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .map-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .caption h1 {
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .caption p {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+  .gambar img {
+    margin: 0px;
+    justify-content: center;
+    /* box-shadow: 0 5px 35px #ffffff; */
+  }
+  .gambar {
+    padding: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .gambar {
+    padding: 0px;
+  }
+  .gambar img {
+    object-fit: contain;
+    margin: 0px;
+    width: 540px;
+    /* box-shadow: 0 5px 35px #ffffff; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gambar {
+    padding: 0px;
+  }
+  .gambar img {
+    object-fit: contain;
+    margin: 0px;
+    width: 450px;
+    /* box-shadow: 0 5px 35px #ffffff; */
+  }
+}

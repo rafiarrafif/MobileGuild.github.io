@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Montserrat&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scroll Card */
+section {
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 20px;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+}
+
+section ul {
+  position: relative;
+  gap: 30px;
+}
+
+section ul li {
+  list-style: none;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.05em;
+}
+
+section ul li h1 {
+  padding-left: 50px;
+  font-weight: bolder;
+  font-family: "barlow", "sans-serif";
+  letter-spacing: 1px;
+  font-size: 90px;
+  margin-bottom: 0px;
+}
+.oren {
+  margin-top: -30px;
+}
+
+section ul li p {
+  margin: 40px;
+}
+
+body {
+  background-color: #000000;
+}
+
+.container2 {
+  padding: 2rem;
+  margin: 10px;
+  margin-top: -10px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 4 / 3;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 0rem 5rem 0.5rem #e8871e;
+  border-radius: 70px;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  transition: width ease 250ms;
+}
+
+.slider-nav a:hover,
+.slider-nav a.active {
+  opacity: 1;
+  width: 1rem;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  body,
+  html {
+    overflow-x: hidden;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+  section ul li h1 {
+    padding-left: 0px;
+    font-weight: bolder;
+    font-family: "barlow", "sans-serif";
+    letter-spacing: 1px;
+    font-size: 90px;
+    margin-bottom: 0px;
+  }
+}
+/* akhir dari scroll card */
