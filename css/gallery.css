@@ -33,3 +33,6 @@ body{
     border-radius: 18px;
     /* box-shadow: 0 -1.4rem 0rem 1rem #000000;; */
 }
+.card-texttt {
+    text-align: justify;
+}
